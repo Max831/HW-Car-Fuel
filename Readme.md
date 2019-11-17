@@ -1,1 +1,1 @@
-[![Build Status](https://travis-ci.org/Max831/HW-Car-Fuel.svg?branch=master)](https://travis-ci.org/Max831/HW-Car-Fuel)[![codecov](https://codecov.io/gh/Max831/HW-Car-Fuel/branch/master/graph/badge.svg)](https://codecov.io/gh/Max831/HW-Car-Fuel)
+[![Build Status](https://travis-ci.org/Max831/HW-Car-Fuel.svg?branch=Car_Fuel)](https://travis-ci.org/Max831/HW-Car-Fuel)[![codecov](https://codecov.io/gh/Max831/HW-Car-Fuel/branch/Car_Fuel/graph/badge.svg)](https://codecov.io/gh/Max831/HW-Car-Fuel)
