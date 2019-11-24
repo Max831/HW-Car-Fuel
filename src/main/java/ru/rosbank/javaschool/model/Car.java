@@ -1,9 +1,10 @@
-package ru.rosbank.javaschool.repository;
+package ru.rosbank.javaschool.model;
 
 public class Car {
     private double chargeFuel;
     private double volumeFuel;
     private int distance;
+    public final static int empty = 0;
 
     public Car(double chargeFuel, double volumeFuel) {
         this.chargeFuel = chargeFuel;

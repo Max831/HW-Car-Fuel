@@ -1,17 +1,16 @@
 package ru.rosbank.javaschool.service;
 
-import ru.rosbank.javaschool.repository.Car;
+import ru.rosbank.javaschool.model.Car;
 
 public class CarService {
-    private final static int zeroValue = 0;
-
-    public void distance(Car car) {
-        if (car.getChargeFuel() > zeroValue && car.getVolumeFuel() > zeroValue) {
-                car.setDistance((int) (car.getVolumeFuel() / car.getChargeFuel() *100));
-                System.out.println(car.getDistance());
-        } else {
-            car.setDistance(zeroValue);
-            System.out.println("Incorrect parameters");
+    public int distance(Car car) {
+        if (car.getChargeFuel() <= Car.empty) {
+            throw new RuntimeException("Incorrect parameters");
+        } else if (car.getVolumeFuel() <= Car.empty) {
+            car.setDistance(0);
+            return car.getDistance();
         }
+        car.setDistance((int) (car.getVolumeFuel() / car.getChargeFuel() *100));
+        return car.getDistance();
     }
 }
